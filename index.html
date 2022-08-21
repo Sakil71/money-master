@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money-Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/67a2fbfa6c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl font-bold text-center my-8 text-cyan-800 underline">Money-Master <i
+                class="fa-solid fa-sack-dollar"></i></h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-2 p-10 gap-5">
+            <div>
+                <img id="back-color" class="rounded-lg w-full h-full" src="Image/Money-Master.png" alt="">
+            </div>
+            <div id="bg" class="bg-gray-100 p-10 text-center rounded-lg">
+
+                <h4 class="text-2xl font-medium">Income</h4>
+                <label class="font-medium" for="income">Your Income: </label>
+                <input id="income" class="px-6 py-1 rounded my-5 bg-gray-300" type="number"
+                    name="" placeholder="@ Your income amount">
+
+                <h1 class="text-2xl font-medium">Expenses</h1>
+
+                <label class="font-medium" for="food">Food: </label>
+                <input id="food-field" class="px-6 py-1 rounded my-5 bg-gray-300" type="number" name=""
+                    placeholder="@ For Food">
+                <br>
+                <label class="font-medium" for="rent">Rent: </label>
+                <input id="rent-field" class="px-6 py-1 rounded my-5 bg-gray-300" type="number" name="" id=""
+                    placeholder="@ For Rent">
+                <br>
+                <label class="font-medium" for="clothes">Clothes: </label>
+                <input id="cloth-field" class="px-6 py-1 rounded my-5 bg-gray-300" type="number" name="" id=""
+                    placeholder="@ Clothes">
+                <br>
+
+                <button id="calculate-button"
+                    class="px-6 py-1 bg-blue-400 hover:bg-blue-600 rounded-lg font-medium text-white my-8">Canculate</button>
+
+                <h1 class="text-2xl font-medium mb-4">Total Expenses: <span id="total-expense">00</span></h1>
+                <h1 class="text-2xl font-medium">Balance: <span id="total-balance">00</span></h1>
+
+                <div>
+                    <label class="font-medium" for="save">Save:</label>
+                    <input id="percentage-field" class="px-6 py-1 rounded my-5 bg-gray-300 w-32" type="number"
+                        placeholder="Save %">
+
+                    <label class="font-medium" for="percent">%</label>
+                    <button id="save-button"
+                        class="px-6 py-1 bg-blue-400 hover:bg-blue-600 rounded-lg font-medium text-white my-8">Save</button>
+
+                    <h1 class="text-2xl font-medium mb-4">Saving Amount: <span id="save-percentage">00</span></h1>
+                    <h1 class="text-2xl font-medium">Remaining Balance: <span id="remaining-balance">00</span></h1>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
